@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <ViewFlipper
+                android:id="@+id/flipper"
+                android:layout_width="wrap_content"
+                android:layout_height="210dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/slide5" />
+            </ViewFlipper>
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/flipper"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/sanpham"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/flipper"
+                android:layout_toRightOf="@id/txt1"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/ten"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt1"
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                android:text="@string/gia"
+                android:textColor="@color/gia" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt1"
+                android:layout_toRightOf="@id/txt1"
+                android:paddingLeft="10dp"
+                android:textSize="17dp"
+                android:text="@string/tien"
+                android:textColor="@color/gia" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@id/txt2"
+                android:layout_marginTop="10dp"
+                android:background="#DFD4D4" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/line1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/a"
+                 />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line1"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/username"
+                android:textSize="16dp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/username"
+                android:layout_marginLeft="118dp"
+                android:numStars="5"
+                android:rating="4"
+                android:stepSize="1" />
+            <Button
+                android:id="@+id/email"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/ratingBar"
+                android:background="@drawable/email"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="7dp" />
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/ratingBar"
+                android:background="@drawable/call"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="7dp" />
+            <View
+                android:id="@+id/line2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@id/avatar"
+                android:layout_marginTop="20dp"
+                android:background="#DFD4D4" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông tin sản phẩm"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/line2"
+                android:textSize="20dp"
+                android:textColor="#AFADAD"/>
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/danhmuc"
+                android:layout_below="@+id/txt3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Điện Thoại"
+                android:layout_below="@+id/txt3"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                />
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tinhtrang"
+                android:layout_below="@+id/txt4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Còn hàng"
+                android:layout_below="@+id/txt4"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                />
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mota"
+                android:layout_below="@+id/txt5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New 99%
+Sony XZ1 mang theo mình thiết kế quen thuộc góc cạnh nam tính vuông vức của Sony trong những năm gần đây.
+Sony vẫn sử dụng thiết kế Loop Surface cho chiếc XZ1. Tuy nhiên thay sử dụng mặt kính như chiếc XZ Premium, chiếc XZ1 được bao bọc bởi một khối nhôm nguyên bản che cả mặt sau và mặt bên của máy, với lớp nylon cong nhệ ở trên và dưới, tạo nên sắc thái mềm mại hơn cho máy."
+                android:layout_below="@+id/txt6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="17dp"/>
+
+            <Button
+                android:id="@+id/btnback"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="73dp"
+                android:background="@drawable/ic_back" />
+
+            <Button
+                android:id="@+id/btnnext"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="72dp"
+                android:background="@drawable/ic_next" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

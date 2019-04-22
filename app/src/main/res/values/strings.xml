@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EXE2</string>
+    <string name="gia">Giá:</string>
+    <string name="sanpham">Sản phẩm:</string>
+    <string name="ten">Xperia XZ1</string>
+    <string name="tien">6,300,000</string>
+    <string name="username">Lê Khương Tường Vy</string>
+    <string name="danhmuc">Danh mục:</string>
+    <string name="tinhtrang">Tình trạng:</string>
+    <string name="mota">Mô tả sản phẩm:</string>
+</resources>
